@@ -40,7 +40,7 @@ color: #272044;
 }
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/hero-image.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("../images/hero-image.png");
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
@@ -48,12 +48,62 @@ header {
     padding: 260px;
 }
 
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer {
+    color: white;
+    background-image: linear-gradient(rgba(39, 32, 68, 0.9), rgba(39, 32, 68, 0.9)), url("../images/footer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+footer h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1;
+}
+
+footer p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #FFFFFF;
+    opacity: 0.6;
+    margin-right: 20px;
+}
+
+footer a {
+    color: #fff;
+    opacity: 0.7;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
 .container {
     max-width: 1400px;
     margin: 0 auto;
 }
 
-@media (max-width: 900px) {
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    padding: 5px;
+}
+
+@media (max-width: 960px) {
     header {
         padding: 60px 0;
     }
@@ -76,6 +126,11 @@ header {
         padding: 8px 16px;
         font-size: 10px;
         line-height: 1;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        padding: 15px;
     }
 }
 
