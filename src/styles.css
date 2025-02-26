@@ -2,21 +2,21 @@ body {
     font-family: "Poppins", serif;
 }
 
-h1 {
+header h1 {
 font-weight: 700;
 font-size: 96px;
 line-height: 1.5;
 margin: 0;
 }
 
-h2 {
+header h2 {
 font-weight: 400;
 font-size: 40px;
 line-height: 1.5;
 margin: 0;
 }
 
-h3 {
+header h3 {
 font-weight: 900;
 font-size: 24px;
 line-height: 1.5;
@@ -51,6 +51,43 @@ header {
 section {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 100px 0;
+}
+
+main {
+    background-color: #fff;
+}
+
+main img {
+    width: 570px;
+    height: 461px;
+}
+
+main h2 {
+font-weight: 700;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 5px;
+color: #272044;
+opacity: 0.3;
+text-transform: uppercase;
+margin: 0;
+}
+
+main h3 {
+font-weight: 700;
+font-size: 40px;
+line-height: 1.5;
+color: #272044;
+margin: 0;
+}
+
+main p {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+color: #272044;
+opacity: 0.7;
 }
 
 footer {
@@ -58,7 +95,6 @@ footer {
     background-image: linear-gradient(rgba(39, 32, 68, 0.9), rgba(39, 32, 68, 0.9)), url("../images/footer.png");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 100px 0;
 }
 
 footer h3 {
@@ -98,8 +134,15 @@ footer li {
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
     grid-gap: 64px;
+}
+
+.grid-2-columns {
+    grid-template-columns: auto auto;
+}
+
+.grid-3-columns-first-narrow {
+    grid-template-columns: 1fr 2fr 2fr;
 }
 
 @media (max-width: 960px) {
@@ -127,9 +170,18 @@ footer li {
         line-height: 1;
     }
 
+    section {
+        padding: 30px;
+    }
+
+    main img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
     .grid {
         grid-template-columns: 1fr;
-        padding: 15px;
     }
 }
 
