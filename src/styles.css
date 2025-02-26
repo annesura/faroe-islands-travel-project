@@ -220,6 +220,15 @@ footer li {
     margin-top: 45px;
 }
 
+.grid-gallery {
+    display: grid;
+    grid-gap: 20px;
+}
+
+.gallery-images {
+    margin-top: 35px;
+}
+
 .gallery {
     width: 370px;
     height: 370px;
@@ -271,6 +280,10 @@ footer li {
     grid-gap: 10px;
     margin-bottom: 3px;
    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
 
     .card-header img {
         display: none;
