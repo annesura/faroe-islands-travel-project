@@ -73,7 +73,6 @@ footer p {
     line-height: 1.5;
     color: #FFFFFF;
     opacity: 0.6;
-    margin-right: 20px;
 }
 
 footer a {
@@ -100,7 +99,7 @@ footer li {
 .grid {
     display: grid;
     grid-template-columns: 1fr 2fr 2fr;
-    padding: 5px;
+    grid-gap: 64px;
 }
 
 @media (max-width: 960px) {
